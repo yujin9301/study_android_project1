@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#57595E"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#6C3D5E">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="158dp"
+            android:layout_height="42dp"
+            android:text="씨네마 천국"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.106"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.515" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:background="#B8ACBF">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="119dp"
+            android:layout_height="136dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/title"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.309"
+            tools:srcCompat="@drawable/image11" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="23dp"
+            android:text="군도"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.391"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.175" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014.07.23 개봉 \n액션 / 137 분"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="29dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.14"
+            app:srcCompat="@drawable/ic_15" />
+
+        <TableRow
+            android:layout_width="108dp"
+            android:layout_height="22dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.866" >
+
+
+            <Button
+                android:id="@+id/thumbUpBtn"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_thumbup"
+                tools:layout_editor_absoluteX="146dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <TextView
+                android:id="@+id/thumbUpCnt"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:paddingLeft="5dp"
+                android:text="15"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="173dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="29dp"
+                android:textSize="20dp"
+                app:layout_constraintStart_toEndOf="@+id/thumbUpCnt"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <Button
+                android:id="@+id/thumbDownBtn"
+                android:layout_width="30dp"
+                android:layout_height="29dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_thumbdown"
+                tools:layout_editor_absoluteX="220dp"
+                tools:layout_editor_absoluteY="99dp" />
+            <TextView
+                android:id="@+id/thumbDownCnt"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:paddingLeft="5dp"
+                android:text="1"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="173dp"
+                tools:layout_editor_absoluteY="99dp" />
+        </TableRow>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#F3EEE6">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:text="예매율"
+                android:textColor="#322F38"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="평점"
+                android:textColor="#322F38"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="누적관객수"
+                android:textColor="#322F38"
+                android:textSize="24dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5위 1.8%"
+                android:textColor="#322F38"
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:layout_weight="1">
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="@android:style/Widget.DeviceDefault.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="true"
+                    android:max="5"
+                    android:numStars="5"
+                    android:rating="4.5"></RatingBar>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="839,399명"
+                android:textColor="#322F38"
+                android:textSize="20sp" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:background="#57595E" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F3EEE6"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:text="줄거리"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:inputType="textMultiLine"
+            android:lines="10"
+            android:padding="10dp"
+            android:text="군도, 백성을 구하라!  \n양반과 탐관오리들의 착취가 극에 달했던 조선 철종 13년. \n힘 없는 백성의 편이 되어  세상을 바로잡고자 하는 의적떼인 군도(群盜), 지리산 추설이 있었다.
+            \n\n쌍칼 도치 vs 백성의 적 조윤
+            \n잦은 자연재해, 기근과 관의 횡포까지 겹쳐 백성들의 삶이 날로 피폐해 져 가는 사이,  나주 대부호의 서자로 조선 최고의 무관 출신인 조윤은 극악한 수법으로 양민들을 수탈,  삼남지방 최고의 대부호로 성장한다. 한편 소, 돼지를 잡아 근근이 살아가던 천한 백정 돌무치는  죽어도 잊지 못할 끔찍한 일을 당한 뒤 군도에 합류. 지리산 추설의 신 거성(新 巨星) 도치로 거듭난다.    뭉치면 백성, 흩어지면 도적!  망할 세상을 뒤집기 위해, 백성이 주인인 새 세상을 향해 도치를 필두로 한 군도는 백성의 적,  조윤과 한 판 승부를 시작하는데..." />
+
+
+    </LinearLayout>
+
+</LinearLayout>
